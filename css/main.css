@@ -6,55 +6,134 @@
   font-size: 20px;
 }
 
-body {
-  background: #EBEBEB;
+/* DESKTOP */
+@media only screen and (min-width: 800px) {
+  body {
+    background: #EBEBEB;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  body h1 {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    left: 1em;
+  }
+  body .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 40%;
+    list-style: none;
+  }
+  body .navbar a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  body .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
+            clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
+    background: #5a4cbe;
+    z-index: -1;
+  }
+  body .mobilenav {
+    display: none;
+  }
 }
 
-body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em;
-}
-
-body h1 {
-  position: relative;
-  font-size: 30px;
-  color: white;
-  left: 10%;
-}
-
-body ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 40%;
-  list-style: none;
-  color: white;
-}
-
-body .clip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
-          clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
-  background: #5a4cbe;
-  z-index: -1;
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  body {
+    background: #EBEBEB;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  body h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  body .navbar {
+    display: none;
+  }
+  body .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
+            clip-path: polygon(100% 0, 100% 50%, 0 85%, 0 0);
+    background: #5a4cbe;
+    z-index: -1;
+  }
+  body .mobilenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 3em;
+    background-color: #5a4cbe;
+    position: fixed;
+    bottom: 0;
+  }
+  body .mobileul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .mobileul a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=main.css.map */
