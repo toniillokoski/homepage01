@@ -23,7 +23,7 @@
                 color: white;
                 text-align: center;
                 font-weight: lighter;
-                font-size: 15px;
+                font-size: $smallerfont;
             }
 
             ul {
@@ -52,7 +52,7 @@
             .text1 {
                 margin: 2em 2em 1em 2em;
                 font-weight: bold;
-
+                font-size: $biggerfont;
             }
     
             .text2 {
@@ -60,6 +60,7 @@
                 margin-top: 2em;
                 margin-bottom: 1em;
                 font-weight: normal;
+                font-size: $biggerfont;
             }
 
             a {
@@ -70,9 +71,49 @@
                 border-radius: 0.5em;
                 color: black;
                 text-transform: uppercase;
-                font-size: 15px;
+                font-size: $smallerfont;
             }
         }
+
+        /* SCROLL ICON */
+        .iconscroll, .iconscroll:before {
+            position: absolute;
+            left: 50%;
+        }
+
+        .iconscroll {
+            width: 40px;
+            height: 70px;
+            margin-left: -20px;
+            top: 70%;
+            margin-top: -35px;
+            box-shadow: inset 0 0 0 1px #000;
+            border-radius: 25px;
+
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: #000;
+                margin-left: -4px;
+                top: 8px;
+                border-radius: 4px;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-name: scroll;
+            }
+            @keyframes scroll {
+                100% {
+                    opacity: 0;
+                }
+                0% { 
+                    opacity: 1;
+                    transform: translateY(46px);
+                }
+            }
+        }
+
+
         
         /* MOBILE NAV */
         .mobilenav {
@@ -100,7 +141,7 @@
                     text-decoration: none;
                     color: white;
                     cursor: pointer;
-                    font-size: 15px;
+                    font-size: $smallerfont;
                 }
             }
         }
