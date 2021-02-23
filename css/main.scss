@@ -1,8 +1,4 @@
-$maincolor: #5342d1;
-$accentcolor: #59C3C3;
-$lightcolor: #EBEBEB;
-$darkercolor: #CAD2C5;
-
+@import './variables';
 
 * {
     padding: 0;
@@ -11,33 +7,31 @@ $darkercolor: #CAD2C5;
     font-size: 20px;
 }
 
-/*  ------------------------------------------------ */
-/*  -------------------- MOBILE -------------------- */
-/*  ------------------------------------------------ */
-
     body {
-
         background: $lightcolor;
+        font-family: Roboto, sans-serif;
 
+        /* DESKTOP NAV + LOGO PART */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1em;
+
+            p {
+                position: relative;
+                color: white;
+                text-align: center;
+                font-weight: lighter;
+                font-size: 15px;
+            }
+
+            ul {
+                display: none;
+            }
         }
 
-        .logo {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-weight: lighter;
-            font-size: 15px;
-        }
-
-        .navbar {
-            display: none;
-        }
-
+        /* CLIP ART */
         .clip {
             position: absolute;
             top: 0;
@@ -48,7 +42,39 @@ $darkercolor: #CAD2C5;
             background: $maincolor;
             z-index: -1;
         }
+
+        /* MAIN TEXT / HEADER */
+        .maintxt {
+            position: relative;
+            text-align: center;
+            color: $lightcolor;
+
+            .text1 {
+                margin: 2em 2em 1em 2em;
+                font-weight: bold;
+
+            }
+    
+            .text2 {
+                text-align: center;
+                margin-top: 2em;
+                margin-bottom: 1em;
+                font-weight: normal;
+            }
+
+            a {
+                position: relative;
+                background: $accentcolor;
+                padding: 0.5em 3em;
+                width: 50px;
+                border-radius: 0.5em;
+                color: black;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+        }
         
+        /* MOBILE NAV */
         .mobilenav {
             display: flex;
             flex-direction: row;
@@ -60,48 +86,22 @@ $darkercolor: #CAD2C5;
             left: 0;
             bottom: 0;
             width: 100%;
-        }
 
-        .mobileul {
-            justify-content: space-between;
-            display: flex;
-            list-style: none;
-            flex-direction: row;
-            width: 100vw;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
+            ul {
+                justify-content: space-between;
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                width: 100vw;
+                margin-left: 1em;
+                margin-right: 1em;
 
-        .mobileul a {
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-            font-size: 15px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+            }
         }
-
-        .maintxt {
-            position: relative;
-            text-align: center;
-            color: $lightcolor;
-        }
-
-        .text1 {
-            margin-top: 1em;
-            font-weight: bolder;
-        }
-
-        .text2 {
-            text-align: center;
-            margin-top: 2em;
-            font-weight: normal;
-        }
-
-        #contactbtn {
-            background: $accentcolor;
-            padding: 0.2em;
-            width: 8em;
-            border-radius: 0.5em;
-            margin-top: 0.5em;
-        }
-        
     }

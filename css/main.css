@@ -1,3 +1,4 @@
+/* COLORS */
 * {
   padding: 0;
   margin: 0;
@@ -6,11 +7,13 @@
   font-size: 20px;
 }
 
-/*  ------------------------------------------------ */
-/*  -------------------- MOBILE -------------------- */
-/*  ------------------------------------------------ */
 body {
   background: #EBEBEB;
+  font-family: Roboto, sans-serif;
+  /* DESKTOP NAV + LOGO PART */
+  /* CLIP ART */
+  /* MAIN TEXT / HEADER */
+  /* MOBILE NAV */
 }
 
 body header {
@@ -26,7 +29,7 @@ body header {
   padding: 1em;
 }
 
-body .logo {
+body header p {
   position: relative;
   color: white;
   text-align: center;
@@ -34,7 +37,7 @@ body .logo {
   font-size: 15px;
 }
 
-body .navbar {
+body header ul {
   display: none;
 }
 
@@ -48,6 +51,35 @@ body .clip {
           clip-path: polygon(100% 0, 100% 45%, 0 70%, 0 0);
   background: #5342d1;
   z-index: -1;
+}
+
+body .maintxt {
+  position: relative;
+  text-align: center;
+  color: #EBEBEB;
+}
+
+body .maintxt .text1 {
+  margin: 2em 2em 1em 2em;
+  font-weight: bold;
+}
+
+body .maintxt .text2 {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+body .maintxt a {
+  position: relative;
+  background: #59C3C3;
+  padding: 0.5em 3em;
+  width: 50px;
+  border-radius: 0.5em;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 body .mobilenav {
@@ -72,7 +104,7 @@ body .mobilenav {
   width: 100%;
 }
 
-body .mobileul {
+body .mobilenav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -89,35 +121,10 @@ body .mobileul {
   margin-right: 1em;
 }
 
-body .mobileul a {
+body .mobilenav ul a {
   text-decoration: none;
   color: white;
   cursor: pointer;
   font-size: 15px;
-}
-
-body .maintxt {
-  position: relative;
-  text-align: center;
-  color: #EBEBEB;
-}
-
-body .text1 {
-  margin-top: 1em;
-  font-weight: bolder;
-}
-
-body .text2 {
-  text-align: center;
-  margin-top: 2em;
-  font-weight: normal;
-}
-
-body #contactbtn {
-  background: #59C3C3;
-  padding: 0.2em;
-  width: 8em;
-  border-radius: 0.5em;
-  margin-top: 0.5em;
 }
 /*# sourceMappingURL=main.css.map */
