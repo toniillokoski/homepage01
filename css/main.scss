@@ -10,6 +10,11 @@
     body {
         background: $lightcolor;
         font-family: Roboto, sans-serif;
+        margin-bottom: 3em;
+
+        .section1 {
+            height: 70vh;
+        }
 
         /* DESKTOP NAV + LOGO PART */
         header {
@@ -17,15 +22,13 @@
             justify-content: space-between;
             align-items: center;
             padding: 1em;
-
-            p {
+            p {   
                 position: relative;
                 color: white;
                 text-align: center;
                 font-weight: lighter;
                 font-size: $smallerfont;
             }
-
             ul {
                 display: none;
             }
@@ -66,12 +69,12 @@
             a {
                 position: relative;
                 background: $accentcolor;
-                padding: 0.5em 3em;
+                padding: 0.3em 2em;
                 width: 50px;
-                border-radius: 0.5em;
-                color: black;
+                border-radius: $radius;
+                color: $lightcolor;
                 text-transform: uppercase;
-                font-size: $smallerfont;
+                font-size: $biggerfont;
             }
         }
 
@@ -87,14 +90,14 @@
             margin-left: -20px;
             top: 70%;
             margin-top: -35px;
-            box-shadow: inset 0 0 0 1px #000;
-            border-radius: 25px;
+            box-shadow: inset 0 0 0 3px $darkercolor;
+            border-radius: $radius;
 
             &:before {
                 content: '';
                 width: 8px;
                 height: 8px;
-                background: #000;
+                background: $accentcolor;
                 margin-left: -4px;
                 top: 8px;
                 border-radius: 4px;
@@ -113,6 +116,10 @@
             }
         }
 
+        .section2 {
+            border: 2px solid yellow;
+            height: 70vh;
+        }
 
         
         /* MOBILE NAV */
