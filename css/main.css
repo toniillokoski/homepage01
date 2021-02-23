@@ -17,11 +17,12 @@ body {
   /* CLIP ART */
   /* MAIN TEXT / HEADER */
   /* SCROLL ICON */
+  /* OUR WORK SECTION, SECTION 2 */
   /* MOBILE NAV */
 }
 
 body .section1 {
-  height: 70vh;
+  height: 60vh;
 }
 
 body header {
@@ -88,8 +89,8 @@ body .maintxt a {
   width: 50px;
   border-radius: 25px;
   color: #ecebeb;
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 25px;
 }
 
 body .iconscroll, body .iconscroll:before {
@@ -147,8 +148,33 @@ body .iconscroll:before {
 }
 
 body .section2 {
-  border: 2px solid yellow;
-  height: 70vh;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+body .section2 .subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  color: #f5473b;
+}
+
+body .section2 .title {
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+}
+
+body .section2 .desc {
+  margin-bottom: -0.1em;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+body .section2 img {
+  width: 100%;
+  margin-bottom: 4em;
 }
 
 body .mobilenav {

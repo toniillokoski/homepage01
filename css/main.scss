@@ -13,7 +13,7 @@
         margin-bottom: 3em;
 
         .section1 {
-            height: 70vh;
+            height: 60vh;
         }
 
         /* DESKTOP NAV + LOGO PART */
@@ -73,8 +73,8 @@
                 width: 50px;
                 border-radius: $radius;
                 color: $lightcolor;
+                text-decoration: none;
                 text-transform: uppercase;
-                font-size: $biggerfont;
             }
         }
 
@@ -116,9 +116,34 @@
             }
         }
 
+        /* OUR WORK SECTION, SECTION 2 */
         .section2 {
-            border: 2px solid yellow;
-            height: 70vh;
+            text-align: center;
+            padding: 4em 1em;
+
+            .subtitle {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                font-size: $smallerfont;
+                color: $accentcolor;
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: $biggerfont;
+                display: block;
+            }
+
+            .desc {
+                margin-bottom: -0.1em;
+                line-height: 1.8em;
+                font-weight: 400;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 4em;
+            }
         }
 
         
