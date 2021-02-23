@@ -14,15 +14,9 @@ body {
   font-family: Roboto, sans-serif;
   margin-bottom: 3em;
   /* DESKTOP NAV + LOGO PART */
-  /* CLIP ART */
-  /* MAIN TEXT / HEADER */
-  /* SCROLL ICON */
+  /* MAIN SECTION 1 */
   /* OUR WORK SECTION, SECTION 2 */
   /* MOBILE NAV */
-}
-
-body .section1 {
-  height: 60vh;
 }
 
 body header {
@@ -50,7 +44,14 @@ body header ul {
   display: none;
 }
 
-body .clip {
+body .section1 {
+  height: 70vh;
+  /* CLIP ART */
+  /* MAIN TEXT / HEADER */
+  /* SCROLL ICON */
+}
+
+body .section1 .clip {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,19 +63,19 @@ body .clip {
   z-index: -1;
 }
 
-body .maintxt {
+body .section1 .maintxt {
   position: relative;
   text-align: center;
   color: #ecebeb;
 }
 
-body .maintxt .text1 {
+body .section1 .maintxt .text1 {
   margin: 2em 2em 1em 2em;
   font-weight: bold;
   font-size: 25px;
 }
 
-body .maintxt .text2 {
+body .section1 .maintxt .text2 {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -82,7 +83,7 @@ body .maintxt .text2 {
   font-size: 25px;
 }
 
-body .maintxt a {
+body .section1 .maintxt a {
   position: relative;
   background: #f5473b;
   padding: 0.3em 2em;
@@ -93,12 +94,12 @@ body .maintxt a {
   text-transform: uppercase;
 }
 
-body .iconscroll, body .iconscroll:before {
+body .section1 .iconscroll, body .section1 .iconscroll:before {
   position: absolute;
   left: 50%;
 }
 
-body .iconscroll {
+body .section1 .iconscroll {
   width: 40px;
   height: 70px;
   margin-left: -20px;
@@ -109,7 +110,7 @@ body .iconscroll {
   border-radius: 25px;
 }
 
-body .iconscroll:before {
+body .section1 .iconscroll:before {
   content: '';
   width: 8px;
   height: 8px;
@@ -149,7 +150,8 @@ body .iconscroll:before {
 
 body .section2 {
   text-align: center;
-  padding: 4em 1em;
+  padding: 2em 1em 0em 1em;
+  margin-top: 3em;
 }
 
 body .section2 .subtitle {
