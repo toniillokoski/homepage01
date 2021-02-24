@@ -23,8 +23,10 @@
                 position: relative;
                 color: white;
                 text-align: center;
-                font-weight: lighter;
                 font-size: $smallerfont;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: $accentcolor;
             }
 
             ul {
