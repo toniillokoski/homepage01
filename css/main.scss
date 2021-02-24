@@ -137,6 +137,7 @@
                 font-weight: bold;
                 font-size: $biggerfont;
                 display: block;
+                padding: 0.2em;
             }
 
             .desc {
@@ -147,6 +148,8 @@
             img {
                 width: 100%;
                 margin-bottom: 4em;
+                border: 2px solid $accentcolor;
+                border-radius: $radius;
             }
         }
 

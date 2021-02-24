@@ -166,6 +166,7 @@ body .section2 .title {
   font-weight: bold;
   font-size: 25px;
   display: block;
+  padding: 0.2em;
 }
 
 body .section2 .desc {
@@ -177,6 +178,8 @@ body .section2 .desc {
 body .section2 img {
   width: 100%;
   margin-bottom: 4em;
+  border: 2px solid #f5473b;
+  border-radius: 25px;
 }
 
 body .mobilenav {
