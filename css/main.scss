@@ -5,12 +5,33 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 20px;
+    letter-spacing: 0.05em; 
 }
 
     body {
         background: $lightcolor;
         font-family: Roboto, sans-serif;
         margin-bottom: 3em;
+
+    .secheader {
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 40vw;
+            border: none;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $maincolor;
+        }
+    }
 
         /* DESKTOP NAV + LOGO PART */
         header {
@@ -36,7 +57,7 @@
 
         /* MAIN SECTION 1 */
         .section1 {
-            height: 70vh;
+            height: 85vh;
 
             /* CLIP ART */
             .clip {
@@ -57,7 +78,7 @@
                 color: $lightcolor;
 
                 .text1 {
-                    margin: 2em 2em 1em 2em;
+                    margin: 2em 1.5em 1em 1.5em;
                     font-weight: bold;
                     font-size: $biggerfont;
                 }
@@ -94,7 +115,7 @@
                 margin-left: -20px;
                 top: 70%;
                 margin-top: -35px;
-                box-shadow: inset 0 0 0 3px $darkercolor;
+                box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.5);
                 border-radius: $radius;
 
                 &:before {
@@ -125,7 +146,7 @@
         .section2 {
             text-align: center;
             padding: 2em 1em 0em 1em;
-            margin-top: 3em;
+            background: $darkercolor;
 
             .subtitle {
                 text-transform: uppercase;
@@ -146,16 +167,54 @@
                 margin-bottom: -0.1em;
                 line-height: 1.8em;
                 font-weight: 400;
+                font-size: $smallerfont;
             }
-            img {
-                width: 100%;
-                margin-bottom: 4em;
-                border: 2px solid $accentcolor;
-                border-radius: $radius;
+
+            .workcontainer {
+
+                img {
+                    width: 100%;
+                    margin-bottom: 4em;
+                    border: 1px solid $maincolor;
+                    border-radius: $radius;
+                }
             }
         }
 
-        
+
+        /* ABOUT SECTION */
+        .section3 {
+            text-align: center;
+            padding: 0em 1em;
+
+            .about {
+                padding: 1em;
+            }
+
+            .name {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                font-size: $biggerfont;
+                color: $maincolor;
+            }
+
+            .desc {
+                margin-bottom: -0.1em;
+                line-height: 1.8em;
+                font-weight: 400;
+                font-size: $smallerfont;
+            }
+            .imgleft {
+                img {
+                    width: 70%;
+                    border: 1px solid $maincolor;
+                    border-radius: $radius;
+                }
+            }
+        }
+
+
         /* MOBILE NAV */
         .mobilenav {
             display: flex;
@@ -186,4 +245,5 @@
                 }
             }
         }
+
     }
