@@ -219,8 +219,38 @@
         .section4 {
             overflow: hidden;
             text-align: center;
-            margin-bottom: 2em;
+            padding-bottom: 5em;
+            background: $darkercolor;
 
+            .contactform {
+                border-radius: $radius;
+
+                input[type=text], select {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid $maincolor;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                
+                input[type=submit] {
+                    cursor: pointer;
+                    border: none;
+                    background: $accentcolor;
+                    padding: 0.3em 2em;
+                    width: 50px;
+                    border-radius: $radius;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                
+                input[type=submit]:hover {
+                    background-color: $accentcolor -rgba(0, 0, 0, 0.5);
+                }
+            }
         }
 
 
