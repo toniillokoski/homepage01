@@ -126,6 +126,7 @@ body .section1 .maintxt a {
   color: #ecebeb;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 body .section1 .iconscroll, body .section1 .iconscroll:before {
@@ -259,23 +260,23 @@ body .section4 .contactform {
 }
 
 body .section4 .contactform input[type=text], body .section4 .contactform select {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #3172db;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin: 0.5em auto;
   resize: vertical;
+  /* ADD INPUT ACTIVE STYLING */
 }
 
 body .section4 .contactform input[type=submit] {
   cursor: pointer;
   border: none;
+  color: #ecebeb;
   background: #f5473b;
-  padding: 0.3em 2em;
-  width: 50px;
+  padding: 0.3em 5em;
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;

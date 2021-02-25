@@ -100,6 +100,7 @@
                     color: $lightcolor;
                     text-decoration: none;
                     text-transform: uppercase;
+                    cursor: pointer;
                 }
             }
 
@@ -226,22 +227,23 @@
                 border-radius: $radius;
 
                 input[type=text], select {
-                    width: 100%;
+                    width: 90%;
                     padding: 12px;
                     border: 1px solid $maincolor;
                     border-radius: 4px;
                     box-sizing: border-box;
-                    margin-top: 6px;
-                    margin-bottom: 16px;
+                    margin: 0.5em auto;
                     resize: vertical;
+                    
+                    /* ADD INPUT ACTIVE STYLING */
                 }
                 
                 input[type=submit] {
                     cursor: pointer;
                     border: none;
+                    color: $lightcolor;
                     background: $accentcolor;
-                    padding: 0.3em 2em;
-                    width: 50px;
+                    padding: 0.3em 5em;
                     border-radius: $radius;
                     text-decoration: none;
                     text-transform: uppercase;
