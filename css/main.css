@@ -18,11 +18,12 @@ body {
   /* MAIN SECTION 1 */
   /* OUR WORK SECTION, SECTION 2 */
   /* ABOUT SECTION */
+  /* CONTACT FORM */
   /* MOBILE NAV */
 }
 
 body .secheader {
-  margin-bottom: 2em;
+  margin: 2em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,6 +245,12 @@ body .section3 .imgleft img {
   width: 70%;
   border: 1px solid #3172db;
   border-radius: 25px;
+}
+
+body .section4 {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 body .mobilenav {

@@ -14,7 +14,7 @@
         margin-bottom: 3em;
 
     .secheader {
-        margin-bottom: 2em;
+        margin: 2em auto;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -213,6 +213,16 @@
                 }
             }
         }
+
+
+        /* CONTACT FORM */
+        .section4 {
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 2em;
+
+        }
+
 
 
         /* MOBILE NAV */
