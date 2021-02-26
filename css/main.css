@@ -44,11 +44,13 @@ body .secheader img {
   border: none;
   margin-bottom: 1em;
   margin-top: 1em;
+  max-width: 150px;
 }
 
 body .secheader h2 {
-  font-size: 40px;
+  font-size: 2em;
   color: #3172db;
+  margin-left: 0.5em;
 }
 
 body header {
@@ -251,24 +253,35 @@ body .section3 .imgleft img {
 body .section4 {
   overflow: hidden;
   text-align: center;
-  padding-bottom: 5em;
   background: #e0e0e0;
+  padding: 2em 1em 3em 1em;
+}
+
+body .section4 .contactform label {
+  padding: 0em;
 }
 
 body .section4 .contactform input[type=text] {
-  width: 90%;
-  padding: 12px;
+  width: 100%;
+  padding: 1em;
   border: 1px solid #3172db;
   border-radius: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0.5em auto;
   resize: vertical;
-  /* ADD INPUT ACTIVE STYLING !! */
+  font-size: 15px;
+}
+
+body .section4 .contactform input[type=text]:focus {
+  outline: none;
+  border: 1px solid #f5473b;
 }
 
 body .section4 .contactform #text {
-  height: 10em;
+  padding: 20px 10px;
+  line-height: 4em;
+  text-align: start;
 }
 
 body .section4 .contactform input[type=submit] {
@@ -276,7 +289,7 @@ body .section4 .contactform input[type=submit] {
   border: none;
   color: #ecebeb;
   background: #f5473b;
-  padding: 0.3em 5em;
+  padding: 0.3em 2em;
   border-radius: 25px;
   text-decoration: none;
   text-transform: uppercase;
