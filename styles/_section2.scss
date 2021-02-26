@@ -1,0 +1,35 @@
+/* OUR WORK SECTION, SECTION 2 */
+.section2 {
+    text-align: center;
+    padding: 2em 1em 0em 1em;
+    background: $darkercolor;
+
+    .workcontainer {
+
+        img {
+            width: 100%;
+            margin-bottom: 4em;
+            border: 1px solid $maincolor;
+            border-radius: $radius;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            font-size: $smallerfont;
+            color: $accentcolor;
+        }
+        .title {
+            font-weight: bold;
+            font-size: $biggerfont;
+            display: block;
+            padding: 0.2em;
+        }
+        .desc {
+            margin-bottom: -0.1em;
+            line-height: 1.8em;
+            font-weight: 400;
+            font-size: $smallerfont;
+        }
+    }
+}

@@ -191,7 +191,14 @@ body .section2 {
   background: #e0e0e0;
 }
 
-body .section2 .subtitle {
+body .section2 .workcontainer img {
+  width: 100%;
+  margin-bottom: 4em;
+  border: 1px solid #3172db;
+  border-radius: 25px;
+}
+
+body .section2 .workcontainer .subtitle {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -199,25 +206,18 @@ body .section2 .subtitle {
   color: #f5473b;
 }
 
-body .section2 .title {
+body .section2 .workcontainer .title {
   font-weight: bold;
   font-size: 25px;
   display: block;
   padding: 0.2em;
 }
 
-body .section2 .desc {
+body .section2 .workcontainer .desc {
   margin-bottom: -0.1em;
   line-height: 1.8em;
   font-weight: 400;
   font-size: 15px;
-}
-
-body .section2 .workcontainer img {
-  width: 100%;
-  margin-bottom: 4em;
-  border: 1px solid #3172db;
-  border-radius: 25px;
 }
 
 body .section3 {
@@ -229,7 +229,14 @@ body .section3 .about {
   padding: 1em;
 }
 
-body .section3 .name {
+body .section3 .about .imgleft img {
+  width: 70%;
+  border: 1px solid #3172db;
+  border-radius: 25px;
+  max-width: 250px;
+}
+
+body .section3 .about .info .name {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -237,17 +244,12 @@ body .section3 .name {
   color: #3172db;
 }
 
-body .section3 .desc {
+body .section3 .about .info .desc {
   margin-bottom: -0.1em;
   line-height: 1.8em;
   font-weight: 400;
   font-size: 15px;
-}
-
-body .section3 .imgleft img {
-  width: 70%;
-  border: 1px solid #3172db;
-  border-radius: 25px;
+  padding: 0.2em 2em;
 }
 
 body .section4 {

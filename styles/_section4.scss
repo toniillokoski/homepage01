@@ -1,0 +1,51 @@
+/* CONTACT FORM */
+.section4 {
+    overflow: hidden;
+    text-align: center;
+    background: $darkercolor;
+    padding: 2em 1em 3em 1em;
+
+    .contactform {
+        label {
+            padding: 0em;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 1em;
+            border: 1px solid $maincolor;
+            border-radius: $radius;
+            box-sizing: border-box;
+            margin: 0.5em auto;
+            resize: vertical;
+            font-size: $smallerfont;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $accentcolor;
+                }
+        }
+
+        #text {
+            padding: 20px 10px; 
+            line-height: 4em;
+            text-align: start;                
+        }
+        
+        input[type=submit] {
+            cursor: pointer;
+            border: none;
+            color: $lightcolor;
+            background: $accentcolor;
+            padding: 0.3em 2em;
+            border-radius: $radius;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $accentcolor -rgba(0, 0, 0, 0.5);
+            }
+        }
+        
+    }
+}

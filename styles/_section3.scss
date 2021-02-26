@@ -1,0 +1,36 @@
+/* ABOUT SECTION */
+.section3 {
+    text-align: center;
+    padding: 0em 1em;
+
+    .about {
+        padding: 1em;
+
+        .imgleft {
+            img {
+                width: 70%;
+                border: 1px solid $maincolor;
+                border-radius: $radius;
+                max-width: 250px;
+            }
+        }
+
+        .info {
+            .name {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                font-size: $biggerfont;
+                color: $maincolor;
+            }
+
+            .desc {
+                margin-bottom: -0.1em;
+                line-height: 1.8em;
+                font-weight: 400;
+                font-size: $smallerfont;
+                padding: 0.2em 2em;
+            }
+        }
+    }
+}
