@@ -10,3 +10,25 @@ $smallerfont: 15px;
 
 /*BORDER RADIUS*/
 $radius: 25px;
+
+/* RESPONSIVENESS MIXINS */
+@mixin respond($breakpoint) {
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 500px) {
+        @content;
+      } // <500px
+    }
+    // Tablet
+    @if $breakpoint == tablet {
+      @media (max-width: 37.5em) {
+        @content;
+      } //500 - 00px
+    }
+    // Desktop
+    @if $breakpoint == desktop {
+      @media (max-width: 48em) {
+        @content;
+      } //768px
+    }
+}

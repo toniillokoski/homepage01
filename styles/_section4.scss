@@ -3,11 +3,29 @@
     overflow: hidden;
     text-align: center;
     background: $darkercolor;
-    padding: 2em 1em 3em 1em;
+    padding: 0em 1em 3em 1em;
 
     .contactform {
         label {
             padding: 0em;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 1em;
+            border: 1px solid $maincolor;
+            border-radius: $radius;
+            box-sizing: border-box;
+            margin: 0.5em auto;
+            resize: vertical;
+            font-size: $smallerfont;
+            line-height: 0.5em;
+            font-family: Roboto, sans-serif;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $accentcolor;
+                }
         }
 
         input[type=text] {
@@ -24,12 +42,6 @@
                 outline: none;
                 border: 1px solid $accentcolor;
                 }
-        }
-
-        #text {
-            padding: 20px 10px; 
-            line-height: 4em;
-            text-align: start;                
         }
         
         input[type=submit] {

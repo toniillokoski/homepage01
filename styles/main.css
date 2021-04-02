@@ -1,6 +1,7 @@
 /* COLORS */
 /* FONTS */
 /*BORDER RADIUS*/
+/* RESPONSIVENESS MIXINS */
 /* OUR WORK SECTION, SECTION 2 */
 .section2 {
   text-align: center;
@@ -75,11 +76,30 @@
   overflow: hidden;
   text-align: center;
   background: #e0e0e0;
-  padding: 2em 1em 3em 1em;
+  padding: 0em 1em 3em 1em;
 }
 
 .section4 .contactform label {
   padding: 0em;
+}
+
+.section4 .contactform textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #3172db;
+  border-radius: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0.5em auto;
+  resize: vertical;
+  font-size: 15px;
+  line-height: 0.5em;
+  font-family: Roboto, sans-serif;
+}
+
+.section4 .contactform textarea:focus {
+  outline: none;
+  border: 1px solid #f5473b;
 }
 
 .section4 .contactform input[type=text] {
@@ -99,12 +119,6 @@
   border: 1px solid #f5473b;
 }
 
-.section4 .contactform #text {
-  padding: 20px 10px;
-  line-height: 4em;
-  text-align: start;
-}
-
 .section4 .contactform input[type=submit] {
   cursor: pointer;
   border: none;
@@ -120,6 +134,10 @@
   background-color: #f5473b -rgba(0, 0, 0, 0.5);
 }
 
+/* COLORS */
+/* FONTS */
+/*BORDER RADIUS*/
+/* RESPONSIVENESS MIXINS */
 * {
   padding: 0;
   margin: 0;
@@ -219,6 +237,7 @@ body .section1 .maintxt {
   position: relative;
   text-align: center;
   color: #ecebeb;
+  font-size: 0.8em;
 }
 
 body .section1 .maintxt .text1 {
@@ -238,13 +257,18 @@ body .section1 .maintxt .text2 {
 body .section1 .maintxt a {
   position: relative;
   background: #f5473b;
-  padding: 0.3em 2em;
-  width: 50px;
+  padding: 0.3em 1em;
+  width: 1em;
   border-radius: 25px;
   color: #ecebeb;
+  font-size: 0.8em;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+body .section1 .maintxt .big_illust {
+  display: none;
 }
 
 body .section1 .maintxt .big_illust img {

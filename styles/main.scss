@@ -3,6 +3,8 @@
 @import './section3';
 @import './section4';
 
+@import './variables';
+
 * {
     padding: 0;
     margin: 0;
@@ -28,7 +30,7 @@ body {
             border: none;
             margin-bottom: 1em;
             margin-top: 1em;
-            max-width: 150px;            
+            max-width: 150px;     
         }
         h2 {
             font-size: 2em;
@@ -80,6 +82,7 @@ body {
             position: relative;
             text-align: center;
             color: $lightcolor;
+            font-size: 0.8em;
 
             .text1 {
                 margin: 2em 1.5em 1em 1.5em;
@@ -98,17 +101,18 @@ body {
             a {
                 position: relative;
                 background: $accentcolor;
-                padding: 0.3em 2em;
-                width: 50px;
+                padding: 0.3em 1em;
+                width: 1em;
                 border-radius: $radius;
                 color: $lightcolor;
+                font-size: 0.8em;
                 text-decoration: none;
                 text-transform: uppercase;
                 cursor: pointer;
             }
 
             .big_illust {
-                
+                display: none;
                     img {
                         width: 40vw;
                         border: none;
