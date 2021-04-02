@@ -242,7 +242,7 @@ body .section1 .maintxt {
 
 body .section1 .maintxt .text1 {
   margin: 2em 1.5em 1em 1.5em;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 25px;
 }
 
@@ -250,21 +250,27 @@ body .section1 .maintxt .text2 {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 body .section1 .maintxt a {
   position: relative;
   background: #f5473b;
   padding: 0.3em 1em;
-  width: 1em;
   border-radius: 25px;
   color: #ecebeb;
   font-size: 0.8em;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 37.5em) {
+  body .section1 .maintxt a {
+    padding: 0.5em 4em;
+  }
 }
 
 body .section1 .maintxt .big_illust {

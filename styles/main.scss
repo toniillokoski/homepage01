@@ -86,7 +86,7 @@ body {
 
             .text1 {
                 margin: 2em 1.5em 1em 1.5em;
-                font-weight: bold;
+                font-weight: normal;
                 font-size: $biggerfont;
             }
     
@@ -94,21 +94,26 @@ body {
                 text-align: center;
                 margin-top: 2em;
                 margin-bottom: 1em;
-                font-weight: normal;
+                font-weight: bold;
                 font-size: $biggerfont;
+                text-transform: uppercase;
             }
 
             a {
                 position: relative;
                 background: $accentcolor;
                 padding: 0.3em 1em;
-                width: 1em;
                 border-radius: $radius;
                 color: $lightcolor;
                 font-size: 0.8em;
                 text-decoration: none;
                 text-transform: uppercase;
                 cursor: pointer;
+
+                @include respond(tablet) {
+                    padding: 0.5em 4em;
+
+                }
             }
 
             .big_illust {
